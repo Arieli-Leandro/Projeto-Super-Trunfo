@@ -36,8 +36,8 @@ else
     EXTRA_FLAGS = -Wall -Wextra -lraylib -lGL -lm -lpthread -ldl -lrt -lX11 -Wno-unused-parameter -std=c2x -Wl,-rpath=./game/lib
 endif
 
-SRCGER = $(wildcard gerenciador/*.c) $(wildcard gerenciador/src/*.c)
-SRCGAME = $(wildcard game/*.c) $(wildcard game/src/*.c)
+SRCGER = $(wildcard gerenciador/\*.c) $(wildcard gerenciador/src/\*.c)
+SRCGAME = $(wildcard game/\*.c) $(wildcard game/src/\*.c)
 
 all: $(BIN) $(BINGER)
 
